@@ -9,12 +9,14 @@ public class Registro {
     static Alumnos alumnos[]= null;
     static int contador = 0;
     int size = 0;
+    int sizeStatic = 0;
 
     public void sizeAlumno() throws IOException{
         //Variable para la cantidad de nuestra Lista
         System.out.println("******Ingrese la cantidad de Alumnos a Registrar******");
         size = ScannerText.datosInt();
-        alumnos = new Alumnos[size];
+        sizeStatic = size+1;
+        alumnos = new Alumnos[sizeStatic];
         System.out.println("******Okey,la cantidad de alumnos a registrar sera de: "+size);
     }
 
